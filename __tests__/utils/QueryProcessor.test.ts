@@ -17,4 +17,11 @@ describe("QueryProcessor", () => {
             "writer in the English language and the world's pre-eminent dramatist."
           ));
     });
+    test('should return andrew id description', () => {
+        const query = "andrew";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe((
+            "Wouldn't you like to know, weatherboy? - mvanbrie."
+        ));
+    });
 });
